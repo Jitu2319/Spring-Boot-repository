@@ -1,0 +1,13 @@
+package com.Flight_Reservation_app.services;
+
+import com.Flight_Reservation_app.entity.User;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public void saveuserdetail(User user) {
+		
+		
+	}
+
+}

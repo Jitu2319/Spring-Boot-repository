@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Billng Page</title>
+</head>
+<body>
+<h2>Billng || Create</h2>
+	<hr>
+	<form action="savelead" method="post">
+		<pre>
+				Email<input type="email" name="email" value= "${contact.email}" readonly/>
+				First Name<input type="text" name="firstName" value= "${contact.firstName}" readonly/>
+				Last Name<input type="text" name="lastName" value= "${contact.lastName}" readonly/>
+				
+				Mobile<input type="text" name="mobile" value= "${contact.mobile}" readonly/>
+				Product<input type = "text" name ="product"/>
+				Amount<input type = "text" name = "amount"/>
+				Mode of Payment:
+				Cash<input type="radio" name="mode" value="cash">
+				Online<input type="radio" name="mode" value="online">
+				<input type="submit" value="Generate"/>
+		</pre>
+	</form>
+
+
+</body>
+</html>

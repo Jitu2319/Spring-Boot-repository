@@ -1,0 +1,8 @@
+package com.Flight_Reservation_app.utilities;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class PDFgenerator {
+
+}

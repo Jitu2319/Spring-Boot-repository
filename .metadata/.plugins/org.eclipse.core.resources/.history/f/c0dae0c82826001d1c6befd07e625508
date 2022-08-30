@@ -1,0 +1,18 @@
+package com.Flight_Reservation_app.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.Flight_Reservation_app.dto.ReservationRequest;
+
+@Controller
+public class ReservationController {
+	
+	@RequestMapping("/confirmReservation")
+	public String confirmReservation(ReservationRequest reservation) {
+		System.out.println(reservation.getFlightId());
+		return null;
+		
+	}
+
+}

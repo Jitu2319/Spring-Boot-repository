@@ -1,0 +1,9 @@
+package com.searchlead.controller;
+
+public class LeadRestClient {
+	
+	public Lead getleadinfo(long id) {
+
+	}
+
+}

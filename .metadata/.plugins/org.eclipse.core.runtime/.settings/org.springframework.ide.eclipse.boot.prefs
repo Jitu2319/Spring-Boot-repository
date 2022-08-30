@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=31
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.mysql=33
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.security=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=37
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=Generate_Pdf
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.7.3
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Generate Pdf using i text
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.Generate_Pdf
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=1.8
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=Generae_Pdf
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=Generate_Pdf
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.version=0.0.1-SNAPSHOT
+org.springframework.ide.eclipse.boot.wizard.initializr.url=https\://start.spring.io\n

@@ -1,0 +1,5 @@
+package com.laleadapp.controller;
+
+public class LeadRestClient {
+
+}

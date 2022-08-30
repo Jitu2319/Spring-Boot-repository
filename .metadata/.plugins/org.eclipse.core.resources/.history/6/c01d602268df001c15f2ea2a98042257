@@ -1,0 +1,14 @@
+package com.testlead.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class LeadController {
+	
+	@RequestMapping("/veiwleadspage")
+	public String viewleadspage() {
+		return "";
+	}
+
+}

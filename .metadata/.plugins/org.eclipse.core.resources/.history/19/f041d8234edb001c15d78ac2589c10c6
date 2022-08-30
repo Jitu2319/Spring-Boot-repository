@@ -1,0 +1,9 @@
+package com.leadapp.services;
+
+import com.leadapp.entities.Lead;
+
+public interface LeadServices {
+
+	void saveonelead(Lead lead);
+
+}

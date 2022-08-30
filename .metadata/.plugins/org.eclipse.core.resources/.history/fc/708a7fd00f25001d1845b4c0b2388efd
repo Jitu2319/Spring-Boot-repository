@@ -1,0 +1,9 @@
+package com.Flight_Reservation_app.services;
+
+import com.Flight_Reservation_app.entity.User;
+
+public interface UserService {
+	
+	public void saveuserdetail(User user);
+
+}

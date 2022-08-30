@@ -1,0 +1,10 @@
+package com.testapp.Entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "testr")
+public class student {
+
+}

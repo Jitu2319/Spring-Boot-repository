@@ -1,0 +1,30 @@
+package com.Flight_Reservation_app.controller;
+
+import java.sql.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.Flight_Reservation_app.entity.Flight;
+import com.Flight_Reservation_app.repository.FlightRepository;
+
+@Controller
+public class FlightController {
+
+	@Autowired
+	private FlightRepository flightRepo;
+
+	@RequestMapping("/Search")
+	public String searchFlight(@RequestParam("from") String from, @RequestParam("to") String to,
+			@RequestParam("departureDate") @DateTimeFormat(pattern = "MM-dd-yyyy") Date departureDate) {
+		List<Flight> findFlights = flightRepo.findFlights(from, to, departureDate);
+		System.out.println(findFlights);
+		return "displayFlights";
+
+	}
+
+}

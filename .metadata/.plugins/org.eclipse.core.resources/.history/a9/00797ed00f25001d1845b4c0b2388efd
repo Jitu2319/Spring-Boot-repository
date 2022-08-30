@@ -1,0 +1,15 @@
+package com.Flight_Reservation_app.services;
+
+import org.springframework.stereotype.Service;
+
+import com.Flight_Reservation_app.entity.User;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public void saveuserdetail(User user) {
+
+	}
+
+}

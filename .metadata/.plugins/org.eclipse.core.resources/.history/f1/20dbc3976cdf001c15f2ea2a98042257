@@ -1,0 +1,9 @@
+package com.testlead.services;
+
+import com.testlead.entity.Lead;
+
+public interface LeadServices {
+
+	public Lead saveonerecord(Lead lead);
+
+}

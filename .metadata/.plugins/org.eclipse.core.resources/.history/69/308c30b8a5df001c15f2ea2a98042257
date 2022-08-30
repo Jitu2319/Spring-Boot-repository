@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Lead Result</title>
+</head>
+<body>
+	<h2>Lead Data</h2>
+	<hr>
+	Lead Id : ${lead.id}
+	Name: ${lead.name}
+	email: ${lead.email}
+	city: ${lead.city}
+	mobile: ${lead.mobile}
+</body>
+</html>

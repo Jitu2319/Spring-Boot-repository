@@ -1,0 +1,49 @@
+package com.testlead.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.testlead.entity.Lead;
+import com.testlead.repository.LeadRepository;
+
+@Service
+public class LeadServicesImpl implements LeadServices {
+
+	@Autowired
+	private LeadRepository leadrepo;
+
+	@Override
+	public void savelead(Lead lead) {
+
+		leadrepo.save(lead);
+
+	}
+
+	@Override
+	public List<Lead> showallrecord() {
+		List<Lead> leads = leadrepo.findAll();
+		return leads;
+	}
+
+	@Override
+	public void deleteonerecord(long id) {
+		leadrepo.deleteById(id);
+	}
+
+	@Override
+	public Lead getleadinfo(long id) {
+		Optional<Lead> findById = leadrepo.findById(id);
+		Lead lead = findById.get();
+		return lead;
+	}
+
+	@Override
+	public Lead updateonerecord() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.tsearchlead.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class LeadRestClient {
+	
+	@RequestMapping("/viewleadpage")
+	public String getleadinfo() {
+		return "search_lead";
+	}
+
+}

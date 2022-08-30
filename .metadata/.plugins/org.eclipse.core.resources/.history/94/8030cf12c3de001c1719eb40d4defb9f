@@ -1,0 +1,18 @@
+package com.testapp;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.testapp.repository.StudentRepository;
+
+@SpringBootTest
+class TestappApplicationTests {
+	@Autowired
+	private StudentRepository studentrepo;
+
+	@Test
+	void contextLoads() {
+	}
+
+}

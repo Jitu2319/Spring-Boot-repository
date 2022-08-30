@@ -1,0 +1,5 @@
+package com.testlead.services;
+
+public class LeadServicesImpl implements LeadServices {
+
+}

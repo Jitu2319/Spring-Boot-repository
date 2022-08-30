@@ -1,0 +1,10 @@
+package com.testapp.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "records")
+public class Lead {
+
+}

@@ -1,0 +1,10 @@
+package com.leadapp.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "leads")
+public class Lead {
+
+}

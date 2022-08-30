@@ -1,0 +1,20 @@
+package com.Flight_Reservation_app.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Flight_Reservation_app.entity.User;
+
+@Service
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	private UserService userservices;
+
+	@Override
+	public void saveuserdetail(User user) {
+		
+		
+	}
+
+}

@@ -1,0 +1,63 @@
+package com.Flight_Reservation_app.service;
+
+import java.util.Optional;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Flight_Reservation_app.dto.ReservationRequest;
+import com.Flight_Reservation_app.entity.Flight;
+import com.Flight_Reservation_app.entity.Passenger;
+import com.Flight_Reservation_app.entity.Reservation;
+import com.Flight_Reservation_app.repository.FlightRepository;
+import com.Flight_Reservation_app.repository.PassengerRepository;
+import com.Flight_Reservation_app.repository.ReservationRepository;
+import com.Flight_Reservation_app.utilities.PDFgenerator;
+
+@Service
+public class ReservationServiceImpl implements ReservationService {
+
+	@Autowired
+	private FlightRepository flightRepo;
+
+	@Autowired
+	private PassengerRepository passengerRepo;
+
+	@Autowired
+	private ReservationRepository reservationRepo;
+
+	@Override
+	public Reservation bookFlight(ReservationRequest request) {
+		String filePath = "C:\\Users\\admin\\Desktop\\office\\";
+		
+		Long flightId = request.getFlightId();
+		Optional<Flight> findById = flightRepo.findById(flightId);
+		Flight flight = findById.get();
+		Passenger passenger = new Passenger();
+		passenger.setFirstName(request.getFirstName());
+		passenger.setLastName(request.getLastName());
+		passenger.setMiddleName(request.getMiddleName());
+		passenger.setEmail(request.getEmail());
+		passenger.setPhone(request.getPhone());
+		passengerRepo.save(passenger);
+
+		Reservation reservation = new Reservation();
+		reservation.setFlight(flight);
+		reservation.setPassenger(passenger);
+		reservation.setCheckedIn(false);
+		reservation.setNumberOfBags(0);
+		Reservation save = reservationRepo.save(reservation);
+		PDFgenerator pdf = new PDFgenerator();
+		try {
+			pdf.generatePDF(filePath+reservation.getId()+".pdf", request.getFirstName(), 
+					request.getEmail(), request.getPhone(), flight.getOperatingAirlines(), 
+					flight.getEstimatedDepartureTime(), flight.getDepartureCity(), flight.getArrivalCity());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return reservation;
+	}
+
+}

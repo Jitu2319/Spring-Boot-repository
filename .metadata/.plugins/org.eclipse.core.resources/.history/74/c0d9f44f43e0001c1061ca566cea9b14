@@ -1,0 +1,5 @@
+package com.searchlead.entity;
+
+public class Lead {
+
+}

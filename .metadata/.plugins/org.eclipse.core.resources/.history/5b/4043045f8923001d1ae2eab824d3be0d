@@ -1,0 +1,17 @@
+package com.Flight_Reservation_app.entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Flight {
+	
+	private long id;
+	private String flightNumber;
+	private String operatingAirlines;
+	private String departureCity;
+	private String arrivalCity;
+	private Date dateOfDeparture;
+
+}

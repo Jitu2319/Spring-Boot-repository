@@ -1,0 +1,28 @@
+package com.leadapp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.leadapp.entities.Lead;
+import com.leadapp.services.LeadServices;
+
+@Controller
+public class LeadController {
+
+	@Autowired
+	private LeadServices leadservices;
+
+	@RequestMapping("/viewleadspage")
+	public String viewleadspage() {
+		return "newlead";
+
+	}
+
+	@RequestMapping("/savelead")
+	public String saveonelead(Lead lead) {
+		leadservices.saveonelead(lead);
+		return "newlead";
+	}
+
+}

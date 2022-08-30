@@ -1,0 +1,10 @@
+package com.testlead.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class LeadServicesImpl implements LeadServices {
+	
+	@Autowired
+	private LeadRepository leadRepo;
+
+}

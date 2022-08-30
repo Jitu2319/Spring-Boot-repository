@@ -1,0 +1,5 @@
+package com.Flight_Reservation_app.services;
+
+public interface UserService {
+
+}

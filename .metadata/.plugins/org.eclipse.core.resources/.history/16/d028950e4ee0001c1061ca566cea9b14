@@ -1,0 +1,5 @@
+package com.leadapp.controller;
+
+public class LeadRestController {
+
+}

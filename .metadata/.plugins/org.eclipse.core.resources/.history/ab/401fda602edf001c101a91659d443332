@@ -1,0 +1,40 @@
+package com.testlead.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.testlead.entity.Lead;
+import com.testlead.services.LeadServices;
+
+@Controller
+public class LeadController {
+	@Autowired
+	private LeadServices leadservices;
+
+	@RequestMapping("/viewleadpage")
+	public String viewleadpage() {
+		return "NewLead";
+	}
+
+	@RequestMapping("/savelead")
+	public String saveonerecord(@ModelAttribute("lead") Lead lead, ModelMap model) {
+		model.addAttribute("msg", "Data is saved!");
+		leadservices.savelead(lead);
+		return "NewLead";
+
+	}
+	@RequestMapping("/listall")
+	public String showallrecord(ModelMap model) {
+		 List<Lead> showallrecord = leadservices.showallrecord();
+		model.addAttribute("leads", showallrecord);
+		
+		return "";
+		
+	}
+}

@@ -1,0 +1,40 @@
+package com.crm.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.crm.entities.Contact;
+import com.crm.entities.Lead;
+import com.crm.services.ContactService;
+import com.crm.services.LeadService;
+
+@Controller
+
+public class ContactController {
+	
+	@Autowired
+	private LeadService leadService;
+	
+	@Autowired
+	private ContactService contactService;
+	
+	@RequestMapping("/converttoContact")
+	public String converttoContact(@RequestParam("id") long id) {
+		Lead lead = leadService.findLeadById(id);
+		Contact contact = new Contact();
+		contact.setFirstName(lead.getEmail());
+		contact.setFirstName(lead.getFirstName());
+		contact.setFirstName(lead.getLastName());
+		contact.setFirstName(lead.getLeadSource());
+		contact.setFirstName(lead.getMobile());
+		contactService.saveContact(contact);
+		leadService.deleteLeadById(id);
+		
+		return "";
+	}
+	
+
+}

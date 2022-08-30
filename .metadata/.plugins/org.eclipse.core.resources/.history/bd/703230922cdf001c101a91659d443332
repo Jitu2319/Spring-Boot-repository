@@ -1,0 +1,11 @@
+package com.testlead.services;
+
+import com.testlead.entity.Lead;
+
+public interface LeadServices {
+	
+	public void savelead(Lead lead);
+
+	public void showallrecord();
+
+}

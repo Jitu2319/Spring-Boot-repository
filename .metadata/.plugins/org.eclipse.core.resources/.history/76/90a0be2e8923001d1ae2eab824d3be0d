@@ -1,0 +1,15 @@
+package com.Flight_Reservation_app.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class user {
+	
+	private long id;
+	private String firstName;
+	private String lastName;
+	private String Email;
+	private String Password;
+	
+
+}

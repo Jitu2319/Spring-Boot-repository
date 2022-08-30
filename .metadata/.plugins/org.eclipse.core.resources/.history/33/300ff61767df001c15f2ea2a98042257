@@ -1,0 +1,5 @@
+package com.testlead.entity;
+
+public class Lead {
+
+}

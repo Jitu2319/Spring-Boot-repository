@@ -1,0 +1,45 @@
+package com.Flight_Reservation_app.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.Flight_Reservation_app.entity.User;
+import com.Flight_Reservation_app.repository.UserRepository;
+
+@Controller
+public class UserController {
+
+	@Autowired
+	private UserRepository userRepo;
+
+	@RequestMapping("/showLoginPage")
+	public String showLoginPage() {
+		return "login/login1";
+	}
+
+	@RequestMapping("/showReg")
+	public String showReg() {
+		return "login/showReg";
+	}
+
+	@RequestMapping("/saveReg")
+	public String savereg(@ModelAttribute("user") User user) {
+		userRepo.save(user);
+		return "login/login1";
+	}
+
+	@RequestMapping("/verifylogin")
+	public String verifylogin(@RequestParam("email") String email, @RequestParam("password") String password) {
+		User user = userRepo.findByEmail(email);
+		System.out.println(user.getEmail());
+		System.out.println(user.getPassword());
+		
+		return "findFlights";
+
+	}
+	
+	
+}

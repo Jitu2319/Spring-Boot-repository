@@ -1,0 +1,8 @@
+package com.tsearchlead.controller;
+
+public class LeadRestClient {
+	public Lead getLeadInfo(long id) {
+		
+	}
+
+}

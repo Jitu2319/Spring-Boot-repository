@@ -1,0 +1,12 @@
+package com.laleadapp.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.laleadapp.dto.Lead;
+
+public class LeadRestClient {
+	
+	public Lead getLeadInfo() {
+		
+	}
+}

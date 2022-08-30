@@ -1,0 +1,27 @@
+package com.testlead.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.testlead.entity.Lead;
+import com.testlead.repository.LeadRepository;
+@Service
+public class LeadServicesImpl implements LeadServices {
+
+	@Autowired
+	private LeadRepository leadRepo;
+
+	@Override
+	public Lead saveonerecord(Lead lead) {
+		Lead lead = new Lead();
+		leadRepo.save(lead);
+		return lead;
+	}
+
+	@Override
+	public Lead saveonerecord() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.TestProject.Entites;
+
+public class Student {
+
+}

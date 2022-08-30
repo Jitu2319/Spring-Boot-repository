@@ -1,0 +1,16 @@
+package com.testlead.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class LeadController {
+	@Autowired
+	private LeadServices leadservices;
+	
+	@RequestMapping("/viewleadpage")
+	public String viewleadpage() {
+		return "";
+		
+	}
+
+}

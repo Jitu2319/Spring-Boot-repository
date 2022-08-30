@@ -1,0 +1,10 @@
+package com.laleadapp.controller;
+
+import com.laleadapp.dto.Lead;
+
+public class LeadRestClient {
+
+	public Lead getLeadInfo() {
+
+	}
+}

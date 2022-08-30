@@ -1,0 +1,13 @@
+package com.searchlead.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class SearchLeadController {
+	
+	@Autowired
+	private LeadRepository leadRepo;
+	
+
+}

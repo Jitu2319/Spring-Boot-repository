@@ -1,0 +1,15 @@
+package com.Flight_Reservation_app.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Reservation {
+	private boolean checkedIn;
+	private String numberOfBags;
+	private String passengerId;
+	private String flightId;
+	private String created;
+	
+	
+
+}

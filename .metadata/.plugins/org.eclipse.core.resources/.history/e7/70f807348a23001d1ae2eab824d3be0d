@@ -1,0 +1,5 @@
+package com.Flight_Reservation_app.entity;
+
+public class Passenger extends AbstractEntity{
+
+}

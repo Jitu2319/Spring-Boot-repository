@@ -1,0 +1,9 @@
+package com.Flight_Reservation_app.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Reservation {
+	private boolean checkedIn;
+
+}

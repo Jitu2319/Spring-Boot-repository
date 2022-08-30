@@ -1,0 +1,28 @@
+package com.TestProject.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.TestProject.entities.Lead;
+import com.TestProject.services.LeadServices;
+
+@Controller
+public class LeadController {
+	
+	@Autowired
+	private LeadServices leadRepo;
+	
+	@RequestMapping("/viewlaedpage")
+	public String viewLeadsPage() {
+		return "New_Lead";
+	}
+	@RequestMapping("/savelead")
+	public String saveOneLead(@ModelAttribute("lead") Lead lead, ModelMap model) {
+		model.addAttribute("msg", "Data is saved")
+		leadRepo.saveLead(lead);
+		return "New_Lead";
+	}
+}

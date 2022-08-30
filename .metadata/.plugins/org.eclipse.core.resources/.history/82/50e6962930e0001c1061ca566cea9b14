@@ -1,0 +1,5 @@
+package com.testapp.services;
+
+public interface LeadServices {
+
+}

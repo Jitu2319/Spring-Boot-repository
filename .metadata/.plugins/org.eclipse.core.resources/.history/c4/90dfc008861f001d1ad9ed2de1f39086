@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Lead Info Page</title>
+</head>
+<body>
+	<h2>Lead Details Here</h2>
+	<hr>
+	<form>
+		<pre>
+			First Name<input type ="text" name = "firstName"/>
+			Last Name<input type ="text" name = "lastName"/>
+			 Email<input type ="email" name = "email"/>
+			  Lead Source<input type ="text" name = "leadSource"/>
+			   Mobile<input type ="text" name = "mobile"/>
+			
+		</pre>
+	</form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+package com.Flight_Reservation_app.service;
+
+import com.Flight_Reservation_app.dto.ReservationRequest;
+import com.Flight_Reservation_app.entity.Reservation;
+
+public class ReservationServiceImpl implements ReservationService {
+
+	@Override
+	public Reservation bookFlight(ReservationRequest request) {
+		return null;
+	}
+
+}
