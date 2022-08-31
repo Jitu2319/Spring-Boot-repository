@@ -12,6 +12,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class ExcelReader {
+	public static void main(String[] args) {
+		
+	}
 	public void readExcel() {
 
 		try {

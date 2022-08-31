@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace"/>
-    <fullyQualifiedTypeName name="org.springframework.test.annotation.Rollback"/>
-    <fullyQualifiedTypeName name="com.crmapp.entities.Lead"/>
-    <fullyQualifiedTypeName name="com.crmapp.repository.LeadRepository"/>
-    <fullyQualifiedTypeName name="javax.security.auth.message.callback.PrivateKeyCallback.Request"/>
-    <fullyQualifiedTypeName name="com.crmapp.utilities.EmailService"/>
-    <fullyQualifiedTypeName name="com.crmapp.services.LeadService"/>
-    <fullyQualifiedTypeName name="com.crmapp.entities.Contact"/>
-    <fullyQualifiedTypeName name="com.crmapp.repository.ContactRepository"/>
-    <fullyQualifiedTypeName name="com.crmapp.services.ContactService"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="com.crmapp.entities.Billing"/>
     <fullyQualifiedTypeName name="com.crmapp.services.BillingService"/>
@@ -32,13 +22,7 @@
     <fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.itextpdf.text.Section"/>
-    <fullyQualifiedTypeName name="com.itextpdf.text.Font"/>
     <fullyQualifiedTypeName name="com.itextpdf.text.BaseColor"/>
-    <fullyQualifiedTypeName name="com.itextpdf.text.Document"/>
-    <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfWriter"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="com.itextpdf.text.DocumentException"/>
-    <fullyQualifiedTypeName name="com.itextpdf.text.Paragraph"/>
     <fullyQualifiedTypeName name="com.itextpdf.text.Anchor"/>
     <fullyQualifiedTypeName name="com.itextpdf.text.Chapter"/>
     <fullyQualifiedTypeName name="com.Flight_Reservation_app.utilities.PDFgenerator"/>
@@ -51,13 +35,29 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="java.sql.Timestamp"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.element.Cell"/>
+    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.Document"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.Element"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.Font"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.DocumentException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="Generate_Pdf.utility.GeneratePdf"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.AccessibleHTML.TableElementInfo.TableAccessibleContext"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfPTable"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfPCell"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.Paragraph"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.xml.simpleparser.NewLineHandler"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
-    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
     <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
     <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
-    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
+    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
+    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.pdf.hyphenation.TernaryTree.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="Generate_Pdf.utility.ReadExcelDemo"/>
 </qualifiedTypeNameHistroy>

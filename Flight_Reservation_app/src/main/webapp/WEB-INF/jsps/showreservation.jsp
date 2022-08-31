@@ -23,6 +23,8 @@
 		Middle Name<input type="text" name="middleName" />
 		Email<input type="text" name="email" />
 		Phone<input type="text" name="phone" />
+		
+		<h2>Enter Payments Details</h2>
 		<input type="hidden" name="flightId" value="${flight.id}" />
 		Name on the card<input type="text" name="nameOnTheCard" />
 		Card Number<input type="text" name="cardNumber" />
