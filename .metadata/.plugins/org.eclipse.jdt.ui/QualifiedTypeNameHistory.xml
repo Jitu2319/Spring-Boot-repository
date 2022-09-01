@@ -45,7 +45,6 @@
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="com.itextpdf.text.DocumentException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="Generate_Pdf.utility.GeneratePdf"/>
     <fullyQualifiedTypeName name="javax.swing.text.html.AccessibleHTML.TableElementInfo.TableAccessibleContext"/>
     <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfPTable"/>
     <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfPCell"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.itextpdf.text.pdf.hyphenation.TernaryTree.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="Generate_Pdf.utility.ReadExcelDemo"/>
+    <fullyQualifiedTypeName name="Generate_Pdf.utility.GeneratePdf"/>
 </qualifiedTypeNameHistroy>
