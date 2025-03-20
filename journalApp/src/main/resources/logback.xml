@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<appender name="myConsoleAppender"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="myFileAppender"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>D:/Pdf,docs and excels/journalAppLogs/journalApp.log</file>
+		<append>true</append>
+
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- Rotate daily and archive logs with a timestamp -->
+			<fileNamePattern>journalApp-%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- Keep logs for the last 30 days -->
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="myConsoleAppender" />
+		<appender-ref ref="myFileAppender" />
+	</root>
+
+</configuration>
