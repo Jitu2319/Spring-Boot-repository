@@ -1,7 +1,0 @@
-package com.testapp.services;
-
-public interface LeadServices {
-
-	public Lead saveonerecord();
-
-}

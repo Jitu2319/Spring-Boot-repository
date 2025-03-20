@@ -1,5 +1,0 @@
-package com.leadapp.utilities;
-
-public interface EmailServiceImpl extends EmailService {
-
-}

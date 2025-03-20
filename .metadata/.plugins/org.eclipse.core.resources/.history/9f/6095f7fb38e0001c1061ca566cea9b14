@@ -1,5 +1,0 @@
-package com.testapp.utilities;
-
-public interface EmailService {
-
-}

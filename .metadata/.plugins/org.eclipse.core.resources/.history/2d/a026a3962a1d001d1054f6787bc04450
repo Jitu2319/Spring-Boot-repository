@@ -1,5 +1,0 @@
-package com.TestProject.repositories;
-
-public interface StudentRepository {
-
-}

@@ -1,6 +1,0 @@
-package com.Flight_Reservation_app.service;
-
-public interface ReservationService {
-	
-
-}

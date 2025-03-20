@@ -1,5 +1,0 @@
-package com.Flight_Reservation_app.service;
-
-public class ReservationServiceImpl implements ReservationService {
-
-}

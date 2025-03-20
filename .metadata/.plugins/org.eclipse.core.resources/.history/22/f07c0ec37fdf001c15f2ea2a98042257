@@ -1,5 +1,0 @@
-package com.testlead.utilities;
-
-public interface EmailService {
-
-}
